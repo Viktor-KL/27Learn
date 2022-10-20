@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b350bfe.css",
+    "main.js": "/static/js/main.0cc9e9db.js",
+    "static/media/benefitsBG.png": "/static/media/benefitsBG.b8604856a6b2032815e6.png",
+    "static/media/learnHeaderBg.png": "/static/media/learnHeaderBg.be177c3d2ce3f1669cf7.png",
+    "static/media/learnPsBg.png": "/static/media/learnPsBg.593cc40bd91ce17119f7.png",
+    "static/media/powerpointBg.png": "/static/media/powerpointBg.cca374369c4e4b6e5d4f.png",
+    "static/media/jsBg.png": "/static/media/jsBg.566e9bf1e7164b444222.png",
+    "static/media/blenderBg.png": "/static/media/blenderBg.b3e62b643a9f83eb1458.png",
+    "static/media/jsBook.png": "/static/media/jsBook.f7f30ff613587d9fc94e.png",
+    "static/media/homePageHeaderImg.png": "/static/media/homePageHeaderImg.a318e240bee636f4b2a3.png",
+    "static/media/navLogo.svg": "/static/media/navLogo.0e332a8fdc1cafbbe21b7885e7d818bc.svg",
+    "index.html": "/index.html",
+    "main.1b350bfe.css.map": "/static/css/main.1b350bfe.css.map",
+    "main.0cc9e9db.js.map": "/static/js/main.0cc9e9db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b350bfe.css",
+    "static/js/main.0cc9e9db.js"
+  ]
+}

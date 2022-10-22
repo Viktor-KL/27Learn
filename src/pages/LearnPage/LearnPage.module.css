@@ -1,0 +1,301 @@
+.main {
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    background: url("../../assets/learnHeaderBg.png") no-repeat;
+    background-position: center;
+    background-size: 19%;
+    animation: headerBG .5s ease;
+}
+
+
+.header__wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 560px;
+    animation: headerInfoSlide .5s ease;
+}
+.header__subtitle {
+    margin: 16px 0 32px;
+}
+.headerBG {
+    background: url("../../assets/learnHeaderBg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.learn__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.learn__block {
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+.learn__blockJs {
+    background: #f7df1e;
+
+}
+.learn__blockPs {
+    background: #001E36;
+
+}
+.learn__blockPowerPoint {
+    background: #2E3A3A;
+
+}
+.learn__blockBlender {
+    background: #FCFFFC;
+
+}
+
+.learn__info {
+    height: 40%;
+    width: 47%;
+    position: absolute;
+    display: none;
+    border-radius: 16px;
+    background: url("../../assets/learnInfoBg.png") no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    animation: learnBlockAnimation .5s ease;
+
+
+}
+.learn__block:hover .learn__info {
+    display: flex;
+}
+
+.learn__infoTitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+.learn__infoSubtitle {
+    color: #ffffff;
+    max-width: 60%;
+    font-size: 16px;
+    margin: 16px 0 32px;
+}
+
+.learnBtn {
+    font-size: 16px;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: .3s ease;
+
+}
+.learnBtn:hover {
+    background: none;
+    color: #ffffff;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+.learnBtn_pp {
+    color: #ffffff;
+    background: #2E3A3A;
+    border: 1px solid #2E3A3A;
+}
+
+.learnBtn_ps {
+    color: #ffffff;
+    background: #001E36;
+    border: 1px solid #001E36;
+
+}
+.learnBtn_js {
+    color: #000;
+    background: #F7DF1E;
+    border: 1px solid #F7DF1E;
+
+}
+
+.learnBtn_blender {
+    color: #000;
+    background: #FCFFFC;
+    border: 1px solid #FCFFFC;
+
+}
+.learn__main__title {
+    font-size: 58px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*animation*/
+
+@keyframes headerBG {
+    0% {
+        background-position: right 35% bottom 50%;
+    }
+
+    100% {
+        background-position: center;
+    }
+}
+
+@keyframes headerInfoSlide {
+    0% {
+        margin-top: -30px;
+        margin-left: -100px;
+    }
+    100% {
+        margin: 0;
+    }
+}
+
+@keyframes learnBlockAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+
+/*adaptive*/
+
+
+@media screen and (max-width: 1200px) {
+    .header__wrap {
+        animation: none;
+    }
+    .header {
+        height: 600px;
+        background-size: 50%;
+    }
+    .learn__blockImg {
+        max-width: 30%;
+    }
+    .learn__info {
+        display: flex;
+        height: 30%;
+        width: 40%;
+    }
+    .learn__main__title {
+        font-size: 50px;
+    }
+    .learn__infoTitle {
+        font-size: 32px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .learn__info {
+        height: 28%;
+        width: 42%;
+    }
+    .learn__infoTitle {
+        font-size: 28px;
+    }
+    .learn__main__title {
+        font-size: 45px;
+    }
+    .learn__infoSubtitle {
+        max-width: 80%;
+        margin: 16px 0 24px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .learn__main__title {
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .header {
+        background-size: 70%;
+    }
+    .learn__wrap {
+        flex-direction: column;
+    }
+    .learn__block {
+        width: 100%;
+    }
+    .learn__blockImg {
+        max-width: 20%;
+    }
+
+    .learn__info {
+        height: 40%;
+        width: 80%;
+    }
+    .learn__infoSubtitle {
+        max-width: 60%;
+        margin: 24px 0 32px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .learn__main__title {
+        font-size: 28px;
+    }
+    .header {
+        height: 400px;
+    }
+    .learn__block {
+        height: 500px;
+
+    }
+    .learn__info {
+        height: auto;
+        width: 90%;
+        padding: 40px 0;
+    }
+    .learn__infoTitle {
+        font-size: 24px;
+    }
+    .learn__infoSubtitle {
+        max-width: 80%;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 0;
+        width: 160px;
+    }
+
+}
+

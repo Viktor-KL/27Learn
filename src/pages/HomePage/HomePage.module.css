@@ -1,0 +1,364 @@
+.header {
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 160px;
+    height: 700px;
+
+}
+.header__infoBlock {
+    max-width: 640px;
+}
+.header__subtitle {
+    max-width: 400px;
+    margin: 24px 0 32px;
+}
+.header__img {
+    max-width: 100%;
+}
+
+
+.tech__blockWrap {
+    margin: 80px 0;
+}
+.tech__block {
+    display: flex;
+}
+.tech__blockInfo {
+    max-width: 600px;
+    height: 350px;
+    align-items: center;
+    display: none;
+}
+.tech__blockInfoJs{
+    background: #F7DF1E;
+}
+.tech__blockInfoPs{
+    background: #001E36;
+}
+.tech__blockInfoBlender {
+    background: #FCFFFC;
+}
+.tech__blockInfoPowerPoint {
+    background: #2E3A3A;
+}
+.tech__verticalLine {
+    width: 3px;
+    height: 100%;
+}
+.tech__verticalLineJs {
+    background: #040f0f;
+}
+.tech__verticalLinePs {
+    background: #31A8FF;
+}
+.tech__verticalLineBlender {
+    background: #F68A39;
+}
+.tech__verticalLinePowerPoint {
+    background: #D24625;
+}
+
+.tech__blockArrow {
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    display: none !important;
+
+}
+.tech__blockArrowJs {
+    background: #040f0f;
+}
+.tech__blockArrowPs {
+    background: #31A8FF;
+}
+.tech__blockArrowBlender {
+    background: #F68A39;
+}
+.tech__blockArrowPowerPoint {
+    background: #D24625;
+}
+.tech__blockProgram {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tech__blockJs {
+    background: url('../../assets/techJs.png');
+}
+.tech__blockPs {
+    background: url('../../assets/techPs.png');
+}
+.tech__blockBlender {
+    background: url('../../assets/techBlender.png');
+}
+.tech__blockPowerPoint {
+    background: url('../../assets/techPowerPoint.png');
+}
+
+
+
+.tech__blockTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #040f0f;
+}
+.tech__blockInfoText {
+    padding: 40px;
+}
+
+
+/*tech block animation*/
+
+.tech__blockArrow:hover, .tech__blockProgram:hover {
+    cursor: pointer;
+}
+
+.tech__block:hover .tech__blockInfo {
+    display: flex;
+    animation: techBlockShow .3s ease;
+
+}
+.tech__block:hover .tech__blockArrow {
+    display: flex !important;
+    animation: techBlockShow .3s ease;
+
+
+}
+
+@keyframes techBlockShow {
+    0% {
+        margin-left: -20px;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-left: 0;
+    }
+
+}
+
+/*tech block animation*/
+
+
+.benefits {
+    margin-top: 80px;
+    background-position: center;
+    background: url("../../assets/benefitsBG.png") no-repeat;
+    background-size: cover;
+    padding: 300px 0;
+}
+
+.benefits__blockWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.benefits__block {
+    margin-top: 80px;
+    text-align: center;
+}
+.benefits__blockTitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+.btn-green {
+    color: #fcfffc;
+    background: #2c813b;
+    border: 1px solid #2c813b;
+}
+.btn_green {
+    color: #fcfffc;
+    background: #2c813b;
+    border: 1px solid #2c813b;
+}
+.btn-green:hover, .btn_green:hover {
+    border: 1px solid #2c813b;
+    background: none;
+    color: #2c813b;
+
+}
+.btn {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 12px 0px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: .3s ease;
+}
+
+.c_light {
+    color: #ffffff !important;
+}
+.home__main__title {
+    font-size: 58px;
+}
+/*adaptive*/
+
+
+@media screen and (max-width: 1200px) {
+    .home__main__title {
+        font-size: 48px;
+    }
+    .header__wrap {
+        animation: none !important;
+    }
+
+    .header__infoBlock {
+        max-width: 520px;
+    }
+    .tech__blockProgram {
+        height: 300px ;
+        width: 300px ;
+        background-position: center;
+    }
+    .tech__blockInfo {
+        height: 300px;
+    }
+    .tech__blockArrow {
+        width: 130px;
+        display: flex !important;
+        animation: none;
+    }
+    .benefits__blockIcon {
+        max-width: 100% ;
+    }
+    .benefits {
+        padding: 120px 0;
+    }
+    .benefits__blockWrap {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .header__infoBlock {
+        max-width: 520px;
+    }
+
+    .tech__blockProgram {
+        height: 260px;
+        width: 260px;
+        background-size: 100%;
+    }
+    .tech__blockArrow {
+        width: 100px;
+    }
+    .tech__blockInfo {
+        height: 260px;
+
+    }
+    .tech__blockInfoText {
+        padding: 10px;
+    }
+    .benefits__blockTitle {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__wrap {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .home__main__title {
+        font-size: 41px;
+    }
+    .header__subtitle {
+        max-width: none;
+    }
+    .home__header__btn {
+        margin: 0 auto;
+    }
+    .header__infoBlock {
+        padding-bottom: 40px;
+    }
+    .header__img {
+        max-width: 90%;
+    }
+    .tech__blockProgram {
+        height: 200px;
+        width: 200px;
+    }
+    .tech__blockArrow {
+        width: 60px;
+    }
+
+    .tech__blockArrowImg {
+        width: 40%;
+    }
+    .tech__blockInfo {
+        height: 200px;
+    }
+    .tech__blockTitle {
+        font-size: 18px;
+        margin: 6px 0;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .home__main__title {
+        font-size: 28px;
+    }
+    .header__wrap {
+        margin-bottom: 60px;
+    }
+    .header__subtitle {
+        font-size: 14px;
+        margin: 12px 0 24px;
+    }
+
+    .tech__blockProgram {
+        height: 160px;
+        width: 160px;
+    }
+    .tech__blockArrow {
+        width: 50px;
+    }
+    .tech__block {
+        justify-content: center;
+    }
+    .tech__blockInfo {
+        display: none !important;
+    }
+    .tech__blockWrap {
+        margin: 40px 0;
+    }
+    .benefits__block {
+        margin-top: 40px;
+    }
+    .benefits__blockIcon {
+        max-width: 30%;
+    }
+    .benefits__blockTitle {
+        font-size: 18px;
+    }
+    .benefits {
+        padding: 60px 0;
+    }
+}

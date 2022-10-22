@@ -5,7 +5,6 @@ import JsPage from "./pages/JsPage/JsPage";
 import PowerPointPage from "./pages/PowerPointPage/PowerPointPage";
 import PsPage from "./pages/PsPage/PsPage";
 import Blender from "./pages/BlenderPage/BlenderPage";
-import SupportPage from "./pages/SupportPage/SupportPage";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 
@@ -21,7 +20,6 @@ function App() {
 
           <Route path='/' element={<HomePage />}/>
           <Route path='/learn' element={<LearnPage />}/>
-          <Route path='/support' element={<SupportPage />}/>
           <Route path='/learn/js' element={<JsPage />}/>
           <Route path='/learn/powerpoint' element={<PowerPointPage />}/>
           <Route path='/learn/photoshop' element={<PsPage />}/>

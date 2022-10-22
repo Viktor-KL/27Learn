@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1b350bfe.css",
-    "main.js": "/static/js/main.0cc9e9db.js",
+    "main.js": "/static/js/main.f764c186.js",
     "static/media/benefitsBG.png": "/static/media/benefitsBG.b8604856a6b2032815e6.png",
     "static/media/learnHeaderBg.png": "/static/media/learnHeaderBg.be177c3d2ce3f1669cf7.png",
     "static/media/learnPsBg.png": "/static/media/learnPsBg.593cc40bd91ce17119f7.png",
@@ -13,10 +13,10 @@
     "static/media/navLogo.svg": "/static/media/navLogo.0e332a8fdc1cafbbe21b7885e7d818bc.svg",
     "index.html": "/index.html",
     "main.1b350bfe.css.map": "/static/css/main.1b350bfe.css.map",
-    "main.0cc9e9db.js.map": "/static/js/main.0cc9e9db.js.map"
+    "main.f764c186.js.map": "/static/js/main.f764c186.js.map"
   },
   "entrypoints": [
     "static/css/main.1b350bfe.css",
-    "static/js/main.0cc9e9db.js"
+    "static/js/main.f764c186.js"
   ]
 }

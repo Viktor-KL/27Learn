@@ -1,0 +1,38 @@
+.footer {
+    padding: 160px 0;
+    background: #2E3A3A;
+}
+
+.footer__linksWrap {
+    display: flex;
+    flex-direction: column;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__linksTitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer__links {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer__wrap {
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        padding: 40px 0;
+    }
+
+}

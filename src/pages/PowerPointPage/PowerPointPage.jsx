@@ -9,21 +9,34 @@ const PowerPointPage = () => {
     const casesArray = [
         {
             title: 'Презентація №1',
-            video: <iframe className={styles.cases__video} width="560" height="315" src="https://www.youtube.com/embed/sAPDr7mfflU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            video: <iframe width="560" height="315" src="https://www.youtube.com/embed/2lNoBhANEDw"
+                           title="YouTube video player" frameBorder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowFullScreen>
+                    </iframe>
         },
         {
             title: 'Презентація №2',
-            video: <iframe className={styles.cases__video} width="560" height="315" src="https://www.youtube.com/embed/cS5kYUBY9oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            video: <iframe width="560" height="315" src="https://www.youtube.com/embed/yQnNDjdyuuM"
+                           title="YouTube video player" frameBorder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowFullScreen></iframe>
         },
         {
             title: 'Презентація №3',
-            video: <iframe className={styles.cases__video} width="560" height="315" src="https://www.youtube.com/embed/g4Ho7JF4Hl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            video: <iframe width="560" height="315" src="https://www.youtube.com/embed/U8gpclltKDs"
+                           title="YouTube video player" frameBorder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowFullScreen></iframe>
         },
         {
             title: 'Презентація №4',
-            video: <iframe className={styles.cases__video} width="560" height="315" src="https://www.youtube.com/embed/P2JiKbBA8Co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        }
+            video: <iframe width="560" height="315" src="https://www.youtube.com/embed/lFt5rbMPGuw"
+                           title="YouTube video player" frameBorder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowFullScreen></iframe>
+        }
     ]
-
 
 
 
